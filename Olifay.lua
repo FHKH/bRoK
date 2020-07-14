@@ -38,7 +38,7 @@ linkchannel = export>result;
 Data_ch = json_decode(file_get_contents("http://api.telegram.org/bot".API_KEY."/getChat?chat_id=$mad"));
 user_ch =Data_ch->result>username;
 joinmad = file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=$mad&user_id=".chat_id);
-if(message && (strpos(joinmad,'"status":"left"') or strpos(joinmad,'"Bad Request: USER_ID_INVALID"') or strpos(joinmad,'"status":"kicked"'))!== false){
+if(message && (strpos(joinmad,'"Olifay":"left"') or strpos(joinmad,'"Bad Request: USER_ID_INVALID"') or strpos(joinmad,'"status":"kicked"'))!== false){
 bot('sendmessage',[
 'chat_id'=>$chat_id,
     'text'=>"▫️ يجب عليك الإشتراك في قناة البوت أولاً ⚜️؛
